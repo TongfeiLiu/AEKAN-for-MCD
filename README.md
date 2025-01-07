@@ -24,7 +24,7 @@ Multimodal change detection involves identifying changes between images captured
 </ul>
 
 ## Results Preview  
-Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and **(l) AEKAN (Ours)**. (Notation: green color, red color, white color, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.
+Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and **(l) AEKAN (Ours)**. (Notation: green, red, white, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.
 ![Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and (l) AEKAN (Ours). (Notation: green color, red color, white color, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.)](https://github.com/TongfeiLiu/AEKAN-for-MCD/blob/main/Figs/Fig5-BCIs.png)
 
 ## Requirements
