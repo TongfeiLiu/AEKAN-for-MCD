@@ -15,7 +15,7 @@ The paper “AEKAN: Exploring Superpixel-based Autoencoder Kolmogorov-Arnold Net
 </ul>
 
 ## Introduction
-Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the common features of independent superpixel regions between modalities, thereby realizing multimodal change detection.
+Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the commonality features of independent superpixel regions between modalities, thereby realizing multimodal change detection.
 ## Requirements
 <ul>
   <li>Python 3.7 or higher</li>
