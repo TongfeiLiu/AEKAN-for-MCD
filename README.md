@@ -1,5 +1,5 @@
 # AEKAN-for-MCD
-The paper [AEKAN: Exploring Superpixel-based Autoencoder Kolmogorov-Arnold Networks for Unsupervised Multimodal Change Detection](https://doi.org/10.1109/tgrs.2024.3515258)) has been published by **IEEE Transactions on Geoscience and Remote Sensing in 2024**. 
+The paper [AEKAN: Exploring Superpixel-based Autoencoder Kolmogorov-Arnold Networks for Unsupervised Multimodal Change Detection](https://doi.org/10.1109/tgrs.2024.3515258) has been published by **IEEE Transactions on Geoscience and Remote Sensing in 2024**. 
 
 This repository is the PyTorch implementation of AEKAN.
 
