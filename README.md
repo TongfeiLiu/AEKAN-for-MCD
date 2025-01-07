@@ -37,24 +37,21 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ## Usage
-### 1. Prepare your data:
+### Prepare your data:
 * First-time image (image_t1): e.g., SAR image.
 * Second-time image (image_t2): e.g., optical image.
 * Reference ground truth (Ref_gt): Ground truth change map for evaluation.
-## Parameters
+### Parameters settings:
 * lr: Learning rate (default: 0.0001)
 * weight_decay: Weight decay (default: 0.0001)
 * N_SEG: The number of superpixels (varies depending on the data)
 * Com: Compactness parameter for superpixel segmentation (varies depending on the data)
 * epoch: Number of training epochs (default: 50)
-## Result
+### Results
 After running the script, you will obtain:
-
-Change Intensity Maps: Visual representations of change intensities.
-
-Binary Change Maps: Thresholded maps showing detected changes.
-
-Performance Metrics: A txt file containing Overall Accuracy, Kappa coefficient, and F1 score, etc.
+* Change Intensity Maps (Visual representations of change intensities.)
+* Binary Change Maps (Thresholded maps showing detected changes.)
+* Performance Metrics (A val.txt file containing Overall Accuracy, Kappa coefficient, and F1 score, etc.)
 
 ## Example
 Here’s a step-by-step example to get you started:
