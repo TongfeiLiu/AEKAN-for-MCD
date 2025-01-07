@@ -8,59 +8,70 @@ The paper “AEKAN: Exploring Superpixel-based Autoencoder Kolmogorov-Arnold Net
   <li>Requirements</li>
   <li>Installation</li>
   <li>Usage</li>
-  <li>Parameters</li>
-  <li>Results</li>
-  <li>Example</li>
-  <li>References</li>
   <li>Acknowledgements</li>
 </ul>
 
 ## Introduction
 Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the commonality features of independent superpixel regions between modalities, thereby realizing multimodal change detection. The framework of the proposed AEKAN is presented as follows:
 ![Framework of our proposed AEKAN)](https://github.com/TongfeiLiu/AEKAN-for-MCD/blob/main/Figs/Fig1-AEKAN.png)
-## Result Preview  
+### Characteristics of AEKAN
+<ul>
+  <li>Using superpixels as the unit of analysis</li>
+  <li>Each superpixel is trained independently </li>
+</ul>
+
+## Results Preview  
+Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and **(l) AEKAN (Ours)**. (Notation: green color, red color, white color, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.
 ![Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and (l) AEKAN (Ours). (Notation: green color, red color, white color, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.)](https://github.com/TongfeiLiu/AEKAN-for-MCD/blob/main/Figs/Fig5-BCIs.png)
 
 ## Requirements
 <ul>
-  <li>Python 3.7 or higher</li>
-  <li>PyTorch 11.7 or higher</li>
-  <li>scipy</li>
-  <li>NumPy</li>
-  <li>skimage</li>
+  <li>python==3.10</li>
+  <li>pytorch==2.4.0 </li>
+  <li>scipy==1.14.0</li>
+  <li>numpy==1.23.0</li>
+  <li>scikit-image==0.24.0</li>
 </ul>
 
 ## Installation
 ### 1. Clone the repository: git clone https://github.com/TongfeiLiu/AEKAN-for-MCD.git
 cd AEKAN
 
-### 2. Set up a virtual environment
-python -m venv venv
-source venv/bin/activate  
-
-### 3. Install the required packages:
+### 2. Install the required packages:
 pip install -r requirements.txt
 
 ## Usage
-### Prepare your data:
-* First-time image (image_t1): e.g., SAR image.
-* Second-time image (image_t2): e.g., optical image.
-* Reference ground truth (Ref_gt): Ground truth change map for evaluation.
-### Parameters settings:
+### 1. Prepare your data:
+* First-time image (T1_img): e.g., SAR image.
+* Second-time image (T2_img): e.g., optical image.
+* Reference ground truth (GT_img): Ground truth change map for evaluation.
+
+Please set up your folder like this:
+```
+rootdir\
+
+data\dataset\
+
+  |---- T1.png
+
+  |---- T2.png
+
+  |---- GT.png
+```
+### 2. Parameters Setup
+
 * lr: Learning rate (default: 0.0001)
 * weight_decay: Weight decay (default: 0.0001)
-* N_SEG: The number of superpixels (varies depending on the data)
-* Com: Compactness parameter for superpixel segmentation (varies depending on the data)
+* N_SEG: The number of superpixels (default: 1400) (varies depending on the data)
+* Com: Compactness parameter for superpixel segmentation (default: 20) (varies depending on the data)
 * epoch: Number of training epochs (default: 50)
-### Results
-After running the script, you will obtain:
-* Change Intensity Maps (Visual representations of change intensities.)
-* Binary Change Maps (Thresholded maps showing detected changes.)
-* Performance Metrics (A val.txt file containing Overall Accuracy, Kappa coefficient, and F1 score, etc.)
 
-## Example
-Here’s a step-by-step example to get you started:
-
-## References
+**Note**: The code script accepts several command line arguments to adjust the model and processing. In addition, our current version of the code is only applicable to single-channel and three-channel heterogeneous remote sensing images. If you need to process heterogeneous remote sensing images with other numbers of channels, please modify the network initialization part in the code script to ensure that the encoder's dimensionality reduction channels are consistent with the reconstruction channels of the decoder.
+  
+### 3. Run the script:
+```
+python main.py
+```
+This will give the results of training and testing.
 
 ## Acknowledgements
