@@ -15,7 +15,7 @@ This repository is the PyTorch implementation of AEKAN.
 </ul>
 
 ## Introduction
-Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the commonality features of independent superpixel regions between modalities, thereby realizing multimodal change detection. The framework of the proposed AEKAN is presented as follows:
+Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the commonality features of independent superpixel regions between modalities, thereby realizing changes between multimodal bi-temporal images. The framework of the proposed AEKAN is presented as follows:
 ![Framework of our proposed AEKAN)](https://github.com/TongfeiLiu/AEKAN-for-MCD/blob/main/Figs/Fig1-AEKAN.png)
 ### Characteristics of AEKAN
 <ul>
