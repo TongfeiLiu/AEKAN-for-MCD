@@ -91,4 +91,21 @@ If you find our work useful for your research, please consider citing our paper:
 }
 ```
 
-## Acknowledgements
+## Acknowledgement
+This code is borrowed from the depository[1,2]. We are very grateful for the contributions of all related codes [3,4,5]. In addition, we are also very grateful for the outstanding contributions of the publicly available MCD datasets [6,7,8].
+```
+[1] https://github.com/Blealtan/efficient-kan/blob/master/src/efficient_kan/kan.py.
+[2] https://github.com/KindXiaoming/pykan.
+[3] https://github.com/yulisun.
+[4] https://github.com/ChenHongruixuan/SRGCAE
+[5] https://github.com/llu025/Heterogeneous_CD
+[6] https://sites.google.com/view/luppino/data.
+[7] Professor Michele Volpi's webpage at https://sites.google.com/site/michelevolpiresearch/home.
+[8] Professor Max Mignotte's webpage (http://www-labs.iro.umontreal.ca/~mignotte/).
+```
+
+## Contact us 
+If you have any problems when running the code, please do not hesitate to contact us. Thanks.  
+E-mail: liutongfei_home@hotmail.com or liutongfei@sust.edu.cn
+
+Date: Jan 7, 2025  
