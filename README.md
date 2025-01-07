@@ -26,7 +26,7 @@ Multimodal change detection involves identifying changes between images captured
 </ul>
 
 ## Installation
-### 1. Clone the repository: git clone https://github.com/yourusername/SDCGA.git
+### 1. Clone the repository: git clone https://github.com/TongfeiLiu/AEKAN-for-MCD.git
 cd AEKAN
 
 ### 2. Set up a virtual environment
