@@ -107,6 +107,8 @@ This code is borrowed from the depository[1,2]. We are very grateful for the con
 ```
 
 ## Contact us 
+Although the current version can provide a good result, it is not stable enough due to the lack of supervision information. In the future, we will continue to conduct research and strive to innovate more stable and robust algorithms.
+
 If you have any problems when running the code, please do not hesitate to contact us. Thanks.  
 E-mail: liutongfei_home@hotmail.com or liutongfei@sust.edu.cn
 
