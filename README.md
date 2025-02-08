@@ -17,11 +17,6 @@ This repository is the PyTorch implementation of AEKAN.
 ## Introduction
 Multimodal change detection involves identifying changes between images captured at different times and using different sensors (e.g., optical and SAR). **AEKAN** combines KAN to construct an autoencoder (AE), which can more effectively learn the commonality features of independent superpixel regions between modalities, thereby realizing changes between multimodal bi-temporal images. The framework of the proposed AEKAN is presented as follows:
 ![Framework of our proposed AEKAN)](https://github.com/TongfeiLiu/AEKAN-for-MCD/blob/main/Figs/Fig1-AEKAN.png)
-### Characteristics of AEKAN
-<ul>
-  <li>Using superpixels as the unit of analysis</li>
-  <li>Each superpixel is trained independently </li>
-</ul>
 
 ## Results Preview  
 Visual results of our proposed AEKAN and the other methods on the MCD dataset #1-#5: (a) IRG-McS, (b) GIR-MRF, (c) SCASC, (d) AGSCC, (e) IST-CRF, (f) GBF-CD, (g) GLSS, (h) CANet, (i) CACD, (j) SR-GCAE, (k) BAACL, and **(l) AEKAN (Ours)**. (Notation: green, red, white, and black color denote missed detection pixels, false detection pixels, correct detection changed pixels, correct detection unchanged pixels, respectively.
