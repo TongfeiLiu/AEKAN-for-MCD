@@ -32,11 +32,8 @@ Visual results of our proposed AEKAN and the other methods on the MCD dataset #1
 </ul>
 
 ## Installation
-### 1. Clone the repository: git clone https://github.com/TongfeiLiu/AEKAN-for-MCD.git
+### Clone the repository: git clone https://github.com/TongfeiLiu/AEKAN-for-MCD.git
 cd AEKAN
-
-### 2. Install the required packages:
-pip install -r requirements.txt
 
 ## Usage
 ### 1. Prepare your data:
