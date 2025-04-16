@@ -12,6 +12,7 @@ This repository is the PyTorch implementation of AEKAN.
   <li>Usage</li>
   <li>Citation</li>
   <li>Acknowledgements</li>
+  <li>Contact us</li>
 </ul>
 
 ## Introduction
